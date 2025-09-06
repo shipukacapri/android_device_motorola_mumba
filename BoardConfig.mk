@@ -157,9 +157,6 @@ TARGET_BOARD_PLATFORM := parrot
 BOOT_SECURITY_PATCH := 2026-03-01
 VENDOR_SECURITY_PATCH := $(BOOT_SECURITY_PATCH)
 
-# Power
-TARGET_POWERHAL_MODE_EXT := $(DEVICE_PATH)/power/power-mode.cpp
-
 # Properties
 TARGET_ODM_PROP += $(DEVICE_PATH)/properties/odm.prop
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/properties/product.prop
