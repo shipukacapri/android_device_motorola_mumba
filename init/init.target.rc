@@ -113,6 +113,10 @@ on boot
     #USB controller configuration
     setprop vendor.usb.controller a600000.dwc3
 
+# Dt2w Node
+    chown system system /proc/tp_gesture
+    chmod 0664 /proc/tp_gesture
+
 on property:vendor.display.lcd_density=560
    setprop dalvik.vm.heapgrowthlimit 256m
 
