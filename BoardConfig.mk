@@ -152,6 +152,8 @@ TARGET_KERNEL_EXT_MODULES += \
     motorola/drivers/power/qpnp_adaptive_charge \
     motorola/drivers/ese/st54x \
     motorola/drivers/fm \
+    motorola/drivers/backlight/ktd3136 \
+    motorola/drivers/backlight/aw99703 \
     motorola/drivers/misc/utag \
     motorola/drivers/misc/mmi_stow \
     motorola/drivers/mmi_relay \
