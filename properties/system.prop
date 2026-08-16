@@ -51,3 +51,10 @@ telephony.lteOnCdmaDevice=1
 
 # Wi-Fi
 ro.wifi.channels=
+
+# Infinity Specific Properties
+ro.product.marketname=Motorola moto g57 power
+ro.infinity.soc=Snapdragon 6s Gen4
+ro.infinity.camera=50MP + 8MP + 8MP
+ro.infinity.battery=7000 mAh
+ro.infinity.display=1080x2400 , IPS LCD, 120Hz

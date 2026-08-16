@@ -4,4 +4,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_mumba.mk
+    $(LOCAL_DIR)/infinity_mumba.mk
+
+COMMON_LUNCH_CHOICES := \
+    infinity_mumba-user \
+    infinity_mumba-userdebug \
+    infinity_mumba-eng
