@@ -230,3 +230,6 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Include the proprietary files BoardConfig.
 include vendor/motorola/mumba/BoardConfigVendor.mk
+
+# Include the MotoCamera5 BoardConfig.
+include hardware/MotCamera5/BoardConfig.mk

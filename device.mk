@@ -456,3 +456,6 @@ $(call inherit-product, vendor/motorola/mumba/mumba-vendor.mk)
 
 # Inherit Google Camera
 $(call inherit-product-if-exists, vendor/google/GoogleCamera/config.mk)
+
+# Inherit MotCamera5
+$(call inherit-product-if-exists, hardware/MotCamera5/device.mk)
