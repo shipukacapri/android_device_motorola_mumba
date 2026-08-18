@@ -233,3 +233,6 @@ include vendor/motorola/mumba/BoardConfigVendor.mk
 
 # Include the MotoCamera5 BoardConfig.
 include hardware/MotCamera5/BoardConfig.mk
+
+# Include the DolbyAtmos BoardConfig.
+include hardware/dolby/BoardConfig.mk
