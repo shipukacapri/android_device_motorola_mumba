@@ -448,3 +448,6 @@ PRODUCT_PACKAGES += \
 
 # Inherit from the proprietary files makefile.
 $(call inherit-product, vendor/motorola/mumba/mumba-vendor.mk)
+
+# Inherit Google Camera
+$(call inherit-product-if-exists, vendor/google/GoogleCamera/config.mk)
