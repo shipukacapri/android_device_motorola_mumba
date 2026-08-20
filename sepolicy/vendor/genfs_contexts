@@ -1,0 +1,5 @@
+# Wakeup
+genfscon sysfs /devices/platform/soc/ac0000.qcom,qupv3_1_geni_se/a80000.i2c/i2c-0/0-0028/wakeup u:object_r:sysfs_wakeup:s0
+
+# Dt2w
+genfscon proc /tp_gesture u:object_r:proc_touchpad:s0

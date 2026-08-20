@@ -116,6 +116,9 @@ PRODUCT_PACKAGES += \
     android.hardware.boot-service.qti.recovery
 
 # Camera
+PRODUCT_PACKAGES += \
+    libcamera2ndk_vendor
+
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.concurrent.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.concurrent.xml \
     frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.flash-autofocus.xml \
@@ -294,6 +297,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     vendor/qcom/opensource/power/config/parrot/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
 
+$(call soong_config_set,qtipower,mode_ext_lib,//$(LOCAL_PATH):libpowermode-ext-mumba)
+
 # QSPA
 PRODUCT_PACKAGES += \
     vendor.qti.qspa-service \
@@ -448,3 +453,12 @@ PRODUCT_PACKAGES += \
 
 # Inherit from the proprietary files makefile.
 $(call inherit-product, vendor/motorola/mumba/mumba-vendor.mk)
+
+# Inherit Google Camera
+$(call inherit-product-if-exists, vendor/google/GoogleCamera/config.mk)
+
+# Inherit MotCamera5
+$(call inherit-product-if-exists, hardware/MotCamera5/device.mk)
+
+# Inherit DolbyAtmos
+$(call inherit-product-if-exists, hardware/dolby/aidl-dolby.mk)
